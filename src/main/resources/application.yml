@@ -1,0 +1,23 @@
+# mysql
+spring:
+  datasource:
+    #MySQL配置
+    driverClassName:  com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vueblog?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.markerhub.bean
+server:
+  port: 8080
+  ## DataSource Config
+  #spring:
+  #  datasource:
+  #    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    url: jdbc:mysql://localhost:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+  #    username: root
+  #    password: 123456
+  #mybatis-plus:
+  #  mapper-locations: classpath*:/mapper/**Mapper.xml
